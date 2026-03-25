@@ -1,1 +1,1 @@
-Sales Invoice Account Mapper
+sales_invoice_account_mapper
