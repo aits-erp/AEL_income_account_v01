@@ -8,7 +8,9 @@ app_license = "mit"
 # Apps
 # ------------------
 doctype_js = {
-    "Sales Invoice": "public/js/sales_invoice.js"
+    "Sales Invoice": "public/js/sales_invoice.js",
+     "Purchase Order": "public/js/purchase_order.js"
+
 }
 
 doc_events = {
@@ -16,3 +18,13 @@ doc_events = {
         "validate": "sales_invoice_account_mapper.doc_events.set_income_account_on_sales_invoice"
     }
 }
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "=", "Purchase Order Item"],
+            ["fieldname", "in", ["custom_custom_rate", "custom_cbm", "custom_custom_total", "custom_so_cbm"]]
+        ]
+    }
+]
