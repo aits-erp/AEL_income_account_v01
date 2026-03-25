@@ -16,8 +16,3 @@ doc_events = {
         "validate": "sales_invoice_account_mapper.doc_events.set_income_account_on_sales_invoice"
     }
 }
-# doc_events = {
-#     "Sales Invoice": {
-#         "validate": "sales_invoice_mapper.doc_events.sales_invoice.set_income_account_on_sales_invoice"
-#     }
-# }
